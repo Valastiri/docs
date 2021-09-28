@@ -37,10 +37,10 @@ plugins:
   - git-revision-date-localized:
       type: date
   - with-pdf:
-    exclude_pages:
-      - 'dev-corner/'
-      - 'fbw-a32nx/'
-      - 'pilots-corner/a32nx-briefing/'
+      exclude_pages:
+        - 'dev-corner/'
+        - 'fbw-a32nx/'
+        - 'pilots-corner/a32nx-briefing/'
   - redirects:
       redirect_maps:
         # Folder: /start/
