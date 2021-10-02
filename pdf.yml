@@ -41,6 +41,7 @@ plugins:
         - 'dev-corner/'
         - 'fbw-a32nx/'
         - 'pilots-corner/a32nx-briefing/'
+        - 'release-notes'
   - redirects:
       redirect_maps:
         # Folder: /start/
