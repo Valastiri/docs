@@ -37,6 +37,7 @@ plugins:
   - git-revision-date-localized:
       type: date
   - with-pdf:
+      output_path: pdf/FlyByWire-Guides.pdf
       exclude_pages:
         - 'dev-corner/'
         - 'fbw-a32nx/'
