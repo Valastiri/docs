@@ -1,3 +1,46 @@
+@import url(https://fonts.googleapis.com/css2?family=Manrope&display=swap);
+
+/*Primary Thematic Colors*/
+:root {
+  --md-primary-fg-color:        #00a1c9;
+  --md-primary-fg-color--dark:  hsl(216,32%,17%);
+  --md-primary-fg-color--light: #00CCFF;
+  --md-accent-fg-color:         #00CCFF;
+  --header-font:                Manrope;
+}
+
+/*Header Modifications*/
+.md-typeset h1 {
+  color: #0E131B;
+  font-family: var(--header-font), sans-serif;
+  font-weight: 550;
+  size: 2em;
+}
+.md-typeset h2, .md-typeset h3, .md-typeset h4 {
+  font-family: var(--header-font), sans-serif;
+  font-weight: 400;
+  size: 2em;
+}
+h2 {
+  color: #0E131B; /*Cyan*/
+  /*text-transform: uppercase;*/
+  padding-bottom: 0.5em;
+}
+h3 {
+  color: #171E2C;
+}
+h4 {
+  padding-top: 1em;
+}
+.md-typeset h5 {
+  color: hsl(0, 0%, 100%);
+}
+.md-ellipsis {
+  font-family: var(--header-font), sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 /* highlighting */
 .md-typeset mark { /* ==text== */
     background-color: #244559;
@@ -30,19 +73,34 @@
 .github {
   font-size: 20px;
 }
+/* Tasklist */
+ .md-typeset [type=checkbox]:checked+.task-list-indicator:before {
+    background-color: #00A2AB;
+}
+/*Critic Styling*/
+.md-typeset .critic.block {
+    box-shadow: none;
+    display: block;
+    margin: 1em 0;
+    overflow: auto;
+    background-color: darkred;
+    padding-left: .8rem;
+    padding-right: .8rem;
+}
+/*Custom TOC Tables*/
 /*Table Styling*/
 .md-typeset table:not([class]) th {
   font-weight: bold;
-  background-color: #00C2CB;
-  color: var(--md-default-bg-color);
+  background-color: #00E0FE;
+  color: rgb(0 0 0);
+  font-size: larger;
+  padding: .75em;
+  text-align: center;
 }
 /* reduced table row height */
 .md-typeset table:not([class]) td {
   border-top: .05rem solid var(--md-default-fg-color--lightest);
-  padding: .2375em 1.25em;
+  padding: .75em 1.25em;
   vertical-align: top;
-}
-/* Tasklist */
- .md-typeset [type=checkbox]:checked+.task-list-indicator:before {
-    background-color: #00A2AB;
+  font-size: initial;
 }
